@@ -1,0 +1,10 @@
+#!/Users/olliepage/Documents/github/udacity/DSND_Term2/lessons/01_WebDevelopment/02_BackEndWorkspaceFiles/5_deployment/worldbank2/bin/python3
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from nbformat.sign import TrustNotebookApp
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(TrustNotebookApp.launch_instance())
